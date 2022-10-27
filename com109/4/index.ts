@@ -1,5 +1,6 @@
 // 1
-const x = 10, y = 5;
+const x = 10; const
+    y = 5;
 let z = x + y;
 console.log(z);
 z = x * y;
@@ -9,20 +10,21 @@ console.log(z);
 
 // 2
 let answer = 0;
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function addFunction() {
-  answer++;
-  console.log(answer);
+    answer++;
+    console.log(answer);
 }
 
 // 3
 function practialFunction() {
-  var firstName = "Joe";
-  var surName = "Bloggs";
-  var age = 28;
-  var t = age + 1;
-  console.log(`My first name is ${firstName}`);
-  console.log(`My sur name is ${surName}`);
-  console.log(`My age is ${age}`);
-  console.log(`Next year my age will be ${t}`);
+    const firstName = 'Joe';
+    const surName = 'Bloggs';
+    const age = 28;
+    const t = age + 1;
+    console.log(`My first name is ${firstName}`);
+    console.log(`My sur name is ${surName}`);
+    console.log(`My age is ${age}`);
+    console.log(`Next year my age will be ${t}`);
 }
 practialFunction();

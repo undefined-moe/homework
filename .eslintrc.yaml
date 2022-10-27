@@ -98,6 +98,7 @@ rules:
   newline-per-chained-call: 0
   no-bitwise: 0
   no-console: 0
+  no-alert: 0
   no-continue: 0
   no-extend-native: 0
   no-empty:

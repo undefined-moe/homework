@@ -1,6 +1,7 @@
 import Swiper from 'swiper';
 
-const swiper = new Swiper('.swiper', {
+// eslint-disable-next-line no-new
+new Swiper('.swiper', {
     speed: 400,
     spaceBetween: 100,
 });

@@ -1,19 +1,19 @@
 // 1
-let fruits = ["Apples", "Pear", "Orange"];
-let shoppingCart = fruits;
-shoppingCart.push("Banana");
+const fruits = ['Apples', 'Pear', 'Orange'];
+const shoppingCart = fruits;
+shoppingCart.push('Banana');
 
 alert(fruits.length); // -> 4
 
 // 2
-const array = ["Jazz", "Blues"];
-array.push("Rock-n-Roll");
+const array = ['Jazz', 'Blues'];
+array.push('Rock-n-Roll');
 array[(array.length - 1) / 2] = 'Classics';
 console.log(array.shift());
-array.unshift("Rap", "Reggae");
+array.unshift('Rap', 'Reggae');
 
 // 3
-let ans = prompt('What is the "official" name of JavaScript?');
+const ans = prompt('What is the "official" name of JavaScript?');
 if (ans === 'ECMAScript') {
     alert('Right!');
 } else {
@@ -32,8 +32,8 @@ const result = (a + b < 4) ? 'Below' : 'Over'; // eslint-disable-line
 
 // Advanced 2
 let login;
-const message = (login === 'Employee')
-    ? "Hello"
+const message = (login === 'Employee') // eslint-disable-line
+    ? 'Hello'
     : login === 'Director'
         ? 'Greetings'
         : login === ''
