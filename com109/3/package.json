@@ -1,0 +1,7 @@
+{
+    "name": "com109-3",
+    "version": "1.0.0",
+    "dependencies": {
+        "swiper": "^8.4.4"
+    }
+}

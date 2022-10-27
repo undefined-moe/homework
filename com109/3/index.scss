@@ -1,0 +1,78 @@
+
+.section__header>h1 {
+    font-weight: 400;
+    color: #041E42;
+}
+.sub_border {
+    font-weight: 500;
+    color:#041E42;
+}
+p {
+    color: #69798E;
+}
+.sub_header_ucName {
+    color:#999;
+}
+.sub_header_ucLink:link,
+.sub_header_ucLink:visited {
+    color:#041E42;
+    text-decoration: none;
+}
+.section_header_bottom_p:hover {
+    color: black;
+}
+
+.sub_header_ucLink:hover, 
+.sub_header_ucName:hover {
+    color: blue ;
+    text-decoration: underline;
+}
+.p_hover:hover {
+    color:#2E9BE3;
+    cursor: pointer;
+}
+.pixel_strip {
+    margin:10px;
+    height:3px;
+    // border:2px ridge #001A49;
+    // background-color: #001A49;
+    background: linear-gradient(to right, white,lightpink); 
+}
+.section_body_content {
+    text-indent: 2em
+}
+.section_body_content p {
+    color: #666;
+}
+
+.section_body_content:hover {
+    color:black;
+  
+}
+.section_body_content_left:hover {
+    box-shadow: 3px 3px #333, -1em 0 .4em rgb(234,0,0);
+}
+.section_body_content_right:hover {
+    box-shadow: 3px 3px #333, 1em 0 .4em rgb(234,0,0);
+}
+.left_banner {
+    height: 500px;
+}
+.left_banner img {
+    width: 800px;
+}
+.img_scale:hover {
+    transform:scale(1.2);
+}
+.body_pixel_strip {
+    margin:15px;
+    height:3px;
+    // border:2px ridge #001A49;
+    // background-color: #001A49;
+    background: linear-gradient(to right, red, blue); 
+}
+.section_body_bottom p {
+    font-weight: 800;
+    font-size: 1.5em;
+    color: #0f2b5d;
+}
