@@ -4,7 +4,7 @@
     "workspaces": [
         "com109/*"
     ],
-    "main": "package.json",
+    "main": "bin/entry.js",
     "scripts": {
         "lint": "eslint . --ext=.js,.ts,.jsx,.tsx --fix",
         "ts": "node bin/entry.js"
