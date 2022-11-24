@@ -1,2 +1,2 @@
 require('@hydrooj/utils/lib/register');
-require(process.argv[2]);
+require(require('path').join(process.cwd(), process.argv[2]));

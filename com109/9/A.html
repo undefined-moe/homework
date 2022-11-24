@@ -1,0 +1,53 @@
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Favorite fruit start</title>
+    <style>
+        input:invalid {
+            border: 2px dashed red;
+        }
+
+        input:valid {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="choose">Would you prefer a banana or a cherry? (required)</label>
+            <input id="choose" name="i_like" required aria-required pattern="[Bb]anana|[Cc]herry">
+        </div>
+        <div>
+            <label for="number">How many would you like?</label>
+            <input type="number" id="number" name="amount" value="1" min="1" max="10" />
+        </div>
+        <p>
+        <fieldset>
+            <legend>Do you have a driver's license?<span aria-label="required">*</span></legend>
+            <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
+            <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
+        </fieldset>
+        </p>
+        <div>
+            <label for="mail">I would like you to provide me with an e-mail address:</label>
+            <input type="email" id="mail" name="mail">
+        </div>
+        <script>
+            const email = document.getElementById("mail");
+            email.addEventListener("input", function (event) {
+                if (email.validity.typeMismatch) {
+                    email.setCustomValidity("I am expecting an e-mail address!");
+                } else {
+                    email.setCustomValidity("");
+                }
+            });
+        </script>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

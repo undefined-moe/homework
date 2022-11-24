@@ -1,0 +1,79 @@
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Favorite fruit start</title>
+    <style>
+        input:invalid {
+            border: 2px dashed red;
+        }
+
+        input:valid {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<!--
+
+    Create a webpage that prompts the user to enter his/her height and assigns the user’s input
+to a variable named height. Then, output the value stored in the variable, i.e., the user’s
+entered height.
+2. Create a webpage that asks the user to enter their name and their age. Print out a message
+addressed to them that tells them what year it will be when they will turn 100 years old.
+3. A tasty dough recipe requires the following ingredients to create two large pizzas:
+a. 250 grams of flour
+b. 3 grams of yeast
+c. ¼ teaspoon of salt
+d. ½ teaspoon of sugar
+e. 160 millilitres of water
+Create a webpage, which asks the user to enter the number of pizzas they wish to make before 
+providing them with a list of the proportional ingredients they will require.
+4. A hardware company sells nails at 10p each. It charges £2 for postage and packing irrespective
+of how many nails are ordered, but it also gives discount for bulk purchase as follows:
+
+1-50 0%
+51-100 10%
+101-200 20%
+201 or more 25%
+
+Create a webpage that asks the user how many nails they want to buy. The webpage should 
+then display the percentage discount which will be applied, the cost order before postage and 
+packing, and the total bill including postage and packing
+-->
+
+<body>
+    <script>
+        var height = prompt("Enter your height");
+        document.write("Your height is " + height + "cm");
+        var name = prompt("Enter your name");
+        var age = prompt("Enter your age");
+        var year = 2018 + (100 - age);
+        document.write("You will be 100 years old in " + year);
+        var pizza = prompt("How many pizzas do you want to make?");
+        var flour = 250 * pizza;
+        var yeast = 3 * pizza;
+        var salt = 0.25 * pizza;
+        var sugar = 0.5 * pizza;
+        var water = 160 * pizza;
+        document.write("You will need " + flour + "g of flour, " + yeast + "g of yeast, " + salt + "tsp of salt, " + sugar + "tsp of sugar, " + water + "ml of water");
+        var nails = prompt("How many nails do you want to buy?");
+        var postage = 2;
+        var discount = 0;
+        if (nails >= 1 && nails <= 50) {
+            discount = 0;
+        } else if (nails >= 51 && nails <= 100) {
+            discount = 10;
+        } else if (nails >= 101 && nails <= 200) {
+            discount = 20;
+        } else if (nails >= 201) {
+            discount = 25;
+        }
+        var cost = nails * 0.1;
+        var total = cost + postage;
+        document.write("You will get a " + discount + "% discount, your total cost before postage and packing is £" + cost + ", and your total bill including postage and packing is £" + total);
+    </script>
+    <button>Submit</button>
+</body>
+
+</html>
